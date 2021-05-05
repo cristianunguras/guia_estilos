@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------
+[Layout]
+
+* body
+    + Header / header
+        - navegación de flechas / .navegacion
+            - flecha atras / .navegacion__flechaAtras
+        - section centre / .centro
+            - Titulo de la página / .centro__titulo
+            - Linea de seguimiento / .centro__linea
+
+    + Main / main
+        - section galeria / .galeria (B)
+            - titulo de la galeria / .galeria__titulo (E)
+            - conjunto de imágenes / .galeria__imagenes (E)
+        - article descripción / .descripcion (B)
+            - titulo de la descripción / .descripcion__titulo (E)
+            - zona gris del parrafo de la descripción / .descripcion__parrafo (E)
+        - article ayuda visual con iconos / .descripcionIconos (B)
+            - explicación del alquiler / .descripcionIconos__alquiler (E)
+                - icono / .descriponIconos__alquiler__icono (E)
+                - titulo del icono / .descriponIconos__alquiler__titulo (E)
+
+    + Footer / footer
+        - boton que ocupa todo el ancho posible / .botonSiguiente
+
+-------------------------------------------------------------------*/
+:root{
+    --heightHeaderFooter: 100px;
+    --bordeCurvo: 20px;
+    --paddingGeneral: 20px;
+}
+
+
+header{
+    height: var(--heightHeaderFooter);
+}
+main{
+    background-color: var(--colorWhite);
+    border-top-left-radius: var(--bordeCurvo);
+    border-top-right-radius: var(--bordeCurvo);
+    padding: var(--paddingGeneral);
+    min-height: calc(100vh - (var(--heightHeaderFooter) * 2) );
+}
+footer{
+    background-color: var(--colorWhite);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: var(--heightHeaderFooter);
+    border: 1px solid red;
+}

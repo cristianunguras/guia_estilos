@@ -1,0 +1,65 @@
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Dark grey (text): #333333
+# Dark Blue (headings, links) #000066
+# Mid Blue (header) #333399
+# Light blue (top navigation) #CCCCFF
+# Mid grey: #666666
+# */
+
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background: #ffffff (white)
+Content:    #1e1e1e (light black)
+Header h1:  #9caa3b (green)
+Header h2:  #ee4117 (red)
+Footer:     #b5cede (dark black)
+
+a (standard):   #0040b6 (dark blue)
+a (visited):    #5999de (light blue)
+a (active): #cc0000 (pink)
+-------------------------------------------------------------------*/
+
+/* VARIABLES colores */
+:root {
+  --colorOrange: #f29f05;
+  --colorOrange-light: #f2b705;
+  --colorYellow: #f2cb05;
+  --colorYellow-light: #f2e205;
+  --colorGrey-dark: #7c7b7b;
+  --colorGrey-medium: #b0b0b0;
+  --colorGrey-light: #d9d9d9;
+
+  /* basicos */
+  --colorWhite: rgb(244, 244, 244);
+  --colorBlack: rgb(40, 40, 40);
+}
+
+/* ********************** */
+body{
+  background-color: var(--colorOrange-light);
+}
+
+.titulo_grisoscuro {
+  color: var(--colorGrey-dark);
+}
+
+.titulo_blanco {
+  color: var(--colorWhite);
+}
+
+.subtitulo_grisoscuro {
+  color: var(--colorGrey-dark);
+}
+
+.parrafo_naranja {
+  color: var(--colorOrange);
+}
+
+.parrafo_grisoscuro {
+  color: var(--colorGrey-dark);
+}
+
